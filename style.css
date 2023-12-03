@@ -1,0 +1,690 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Caveat', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding: 30px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.button{
+    margin-top: 25px;
+}
+button{
+    color: black;
+    background-color: rgb(238,185,104,0.997);
+    font-size: 22px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: 1px solid #f1f3f5;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+button:hover{
+    background-color: rgba(196, 193, 193, 0.684);
+    color: #f1f3f5;
+    cursor: pointer;
+    border: 1px solid #f1f3f5;
+    transform: scale(1.1);
+}
+
+.text-align{
+    text-align: center;
+}
+
+.margin-left{
+    margin-left: 20px;
+}
+
+/* Header Section Start */
+ #header{
+
+
+
+
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(./images/back\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #f1f3f5;
+ }
+
+ .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .navbar i{
+    display: none;
+ }
+
+ .header-item{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .header-item  li{
+    list-style: none;
+ }
+
+ .header-item  li a{
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0px 20px;
+    color: #f1f3f5;
+    font-weight: 500;
+    position: relative;
+ }
+
+ .header-item li a::after{
+    
+
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: rgb(238,185,104,0.997);
+    transition: .5s;
+ }
+
+ .header-item li a:hover::after{
+    width: 100%;
+ }
+
+ .main-header{
+    padding: 4px 0;
+   
+    
+ }
+
+
+ .logo h3{
+    font-size: 50px;
+    
+ }
+ .logo h3 span{
+    font-size: 50px;
+    color: rgb(238,185,104,0.997);
+ }
+
+ .main-heading{
+    margin-top: 130px;
+    margin-left: 85px;
+ }
+ .main-heading h1{
+    font-size: 65px;
+    
+ }
+ .main-heading h1 span{
+    font-size: 85px;
+    color: rgb(238,185,104,0.997);
+ }
+ .main-heading h3{
+    font-size: 35px;
+ }
+ 
+/* Header Section End */
+
+/* About Section Start */
+
+#about{
+
+    padding: 90px 0;
+
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(./images/back\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #f1f3f5;
+}
+
+.about-heading h2{
+    font-size: 80px;
+    text-align: center;
+    color: #f1f3f5;
+}
+.about-heading h2 i{
+    color: rgb(238,185,104,0.997);
+    margin: 0px 20px;
+}
+.about-heading p{
+    font-size: 30px;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.col-about{
+    width: 33.3%;
+    padding: 20px;
+}
+
+.col-about h3{
+    color: rgb(238,185,104,0.997);
+    font-size: 35px;
+}
+
+.col-about ul li{
+    list-style: none;
+    font-size: 14px;
+}
+.col-about ul{
+    margin-top: 20px;
+}
+.col-about ul li i{
+    color: rgb(238,185,104,0.997);
+    font-size: 14px;
+    margin: 0px 10px;
+}
+.about-me{
+    margin-top: 40px;
+}
+ /* Service Section Start */
+
+ #service{
+
+    padding: 90px 0;
+
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(./images/back\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #f1f3f5;
+}
+
+
+.service-heading h2{
+    font-size: 80px;
+    text-align: center;
+    color: #f1f3f5;
+}
+.service-heading h2 i{
+    color: rgb(238,185,104,0.997);
+    margin: 0px 20px;
+}
+
+.col-service{
+    width: 33.3%;
+    padding: 20px;
+}
+
+.service-item{
+    margin-top: 50px;
+    background-color: rgb(238,185,104,0.997);
+    padding: 16px;
+    color: black;
+    border-radius: 25px;
+    transition: transform .4s;
+}
+
+.service-icon{
+    font-size: 35px;
+    text-align: center;
+}
+.service-item h4{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+.service-item p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 25px;
+    text-align: justify;
+    
+}
+
+.service-item:hover{
+    background-color: rgba(196, 193, 193, 0.684);
+    transform: translateY(-10px);
+}
+ /* Service Section End */
+
+ /* Portfolio Section Start */
+ #portfolio{
+
+    padding: 90px 0;
+
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(./images/back\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #f1f3f5;
+}
+
+.portfolio-heading h2{
+    font-size: 80px;
+    text-align: center;
+    color: #f1f3f5;
+}
+.portfolio-heading h2 i{
+    color: rgb(238,185,104,0.997);
+    margin: 0px 20px;
+}
+
+.col-portfolio{
+    width: 33.3%;
+    padding: 20px;
+}
+
+.portfolio-item{
+    margin-top: 50px;
+    position: relative;
+}
+
+.portfolio-item img{
+    transition: transform .2s;
+
+}
+.portfolio-item img:hover{
+    transform: scale(1.1);
+}
+
+.col-portfolio img{
+    width: 100%;
+    
+    border-radius: 25px;
+    
+}
+.layer{
+   
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgb(238,185,104,0.997));
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 0px 20px;
+    transition: height .5s;
+}
+
+.portfolio-item:hover .layer{
+    height: 100%;
+
+}
+
+.layer h4{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.layer p{
+    font-size: 22px;
+    margin-top: 20px;
+    text-align: justify;
+    color: black;
+    font-weight: 800;
+}
+
+
+.portfolio-icon{
+    
+    
+    font-size: 22px;
+    text-align: center;
+}
+.portfolio-icon a{
+    text-decoration: none;
+    color: #f1f3f5;
+}
+ /* Portfolio Section End */
+
+
+ /* Contact Section Start */
+   
+ #contact{
+
+    padding: 90px 0;
+
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(./images/back\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #f1f3f5;
+}
+
+.contact-heading h2{
+    font-size: 80px;
+    text-align: center;
+    color: #f1f3f5;
+}
+.contact-heading h2 i{
+    color: rgb(238,185,104,0.997);
+    margin: 0px 20px;
+}
+
+.col-contact{
+    width: 50%;
+    padding: 20px;
+}
+
+.chat{
+    margin-top: 70px;
+}
+form input{
+    width: 100%;
+    padding: 18px;
+    border-radius: 25px;
+    border: 3px solid rgb(238,185,104,0.997);
+    background-color: rgba(196, 193, 193, 0.37);
+    margin: 5px 0px;
+}
+
+form input::placeholder{
+    color: #f1f3f5;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+form textarea{
+    width: 100%;
+    padding: 18px;
+    border-radius: 25px;
+    border: 3px solid rgb(238,185,104,0.997);
+    background-color: rgba(196, 193, 193, 0.37);
+    margin: 5px 0px;
+}
+
+form textarea::placeholder{
+    font-size: 20px;
+    font-weight: 800;
+    color: #f1f3f5;
+}
+
+.col-contact h3{
+    font-size: 55px;
+    text-shadow: 4px 4px 5px rgb(238,185,104,0.997);
+}
+.chat{
+    margin-top: 70px;
+}
+
+.col-contact a{
+    text-decoration: none;
+    color: #f1f3f5;
+    font-size: 25px;
+}
+.col-contact a i{
+    color: rgb(238,185,104,0.997);
+    margin: 0px 20px;
+}
+
+.social a{
+    font-size: 45px;
+}
+
+
+ /* Contact Section End */
+
+
+ /* Copyright Section Start */
+ #copyright{
+    background-color: rgb(238,185,104,0.997);
+    padding: 8px 0;
+ }
+ #copyright h4{
+    font-size: 22px;
+    text-align: center;
+ }
+ /* Copyright Section End */
+/* Responsive CSS */
+
+
+@media screen and (max-width:1200px){
+    .service-item h4{
+        font-size: 30px;
+    }
+
+    .service-item p{
+        font-size: 18px;
+    }
+
+    .col-contact h3{
+        font-size: 45px;
+    }
+
+}
+
+@media screen and (max-width:1040px){
+    .col-service{
+        width: 50%;
+    }
+
+    .col-portfolio{
+        width: 50%;
+    }
+}
+@media screen and (max-width:992px){
+
+    .about-heading p{
+        font-size: 22px;
+    }
+    .col-contact{
+        width: 100%;
+    }
+
+    .header-item li a{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .col-about{
+        width: 50%;
+    }
+
+    .about-heading h2{
+        font-size: 50px;
+    }
+    .service-heading h2{
+        font-size: 50px;
+    }
+
+    .contact-heading h2{
+        font-size: 50px;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .main-heading h1{
+        font-size: 45px;
+        
+     }
+
+     .main-heading h3{
+        font-size: 30px;
+     }
+
+     .main-heading h1 span{
+        font-size: 65px;
+     }
+}
+
+
+@media screen and (max-width:650px)
+{
+    .col-portfolio{
+        width: 100%;
+    }
+
+    .portfolio-heading h2{
+        font-size: 55px;
+    }
+}
+@media screen and (max-width:576px){
+    .col-about{
+        width: 100%;
+    }
+ 
+    .col-service{
+        width: 100%;
+    }
+
+    .col-about h3{
+        font-size: 25px;
+    }
+
+    .service-heading h2{
+        font-size: 35px;
+    }
+
+    .portfolio-heading h2{
+        font-size: 35px;
+    }
+    .contact-heading h2{
+        font-size: 35px;
+    }
+
+    .col-contact h3{
+        font-size: 25px;
+    }
+    
+    form input::placeholder{
+        font-size: 16px;
+    }
+
+   form textarea::placeholder{
+        font-size: 16px;
+    }
+
+    .header-item li a{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:468px){
+
+
+
+    .navbar  i{
+        display: block;
+        font-size: 25px;
+
+    }
+
+    .navbar ul{
+        
+        background-color: rgb(238,185,104,0.997);
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        padding: 14px;
+        z-index: 2;
+        transition: right .5s;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 0px 25px;
+        
+    }
+
+    .navbar ul li a{
+        color: black;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .navbar ul i{
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        cursor: pointer;
+    }
+
+    .navbar .fa-solid{
+        position: absolute;
+        top: 25px;
+        right: 16px;
+    }
+
+     /*.button a button{
+        margin-bottom: 10px;
+        
+     } */
+
+     .margin-left{
+        display: none;
+     }
+
+    .main-heading h1{
+        font-size: 25px;
+        
+     }
+
+     .main-heading h3{
+        font-size: 18px;
+     }
+
+     .main-heading h1 span{
+        font-size: 30px;
+     }
+    .about-heading h2{
+        font-size: 35px;
+    }
+
+    .service-heading h2{
+        font-size: 25px;
+    }
+
+    .portfolio-heading h2{
+        font-size: 25px;
+    }
+
+    .contact-heading h2{
+        font-size: 25px;
+    }
+
+    .social a{
+        font-size: 28px;
+    }
+
+    .col-contact a{
+
+        
+        font-size: 20px;
+    }
+
+    .col-contact .phone a{
+        font-size: 16px;
+    }
+    .col-contact .email a{
+        font-size: 16px;
+    }
+
+    form input::placeholder{
+        font-size: 14px;
+    }
+
+   form textarea::placeholder{
+        font-size: 14px;
+    }
+    
+}
